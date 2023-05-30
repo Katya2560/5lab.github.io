@@ -1,0 +1,146 @@
+html,
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Bookman, URW Bookman L, serif ;
+    font-size: 28px;
+    background-image: url("./картинки/фон.jpg");
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #080000;
+    color: #000000;
+    display: flex;
+    width: 80%;
+    height: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    margin: auto;
+    padding:auto;
+    background-color: rgba(0, 0, 0, 0.474);
+    color: rgb(255, 255, 255);
+    min-height: 5vh;
+    width: 100%;
+  }
+  .main-heading {
+    max-width: auto;
+    text-align: center;
+    margin: auto;
+  }
+  .main-heading h1 {
+    font-size: 45px;
+  }
+  
+  .header {
+    overflow: hidden;
+    justify-content: space-between;
+    padding: auto;
+    flex-grow: 1;
+  }
+  .header a {
+    float: left;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    padding: 12px;
+    text-decoration:none; 
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header--right {
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+.sidenav {
+    background-color: rgba(0, 0, 0, 0.474);
+    height: 100%; 
+    width:15%;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 80%;
+  }
+  li{
+    list-style-type: none;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    margin-left: 0;
+    padding-left: 0; 
+  }
+  .sidenav a:hover {
+    color: #720f99;
+  }
+  .footer {
+    background-color: #0000006a;
+    color: rgba(255,255,255,1.00);
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  .footer p{
+    text-align: center;
+  }
+
+.container__text a{
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.container__text a:hover{
+    color: #720f99;
+}
+
+@media (max-width:480px){
+    .sidenav{
+      font-size: 0;
+      width:25%;
+      opacity:50%;    
+    }
+    .sidenav a{
+      text-align:left;
+    }
+    .container{
+      font-size: 20px;
+      display:flex;
+      width: 100%;
+    }
+    .container__text{
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 20px;
+        height: 100px;
+        padding:  1em;
+        margin-top: 0px;
+    }
+    .main-heading h1 {
+      font-size: 20px;
+    }
+    .header a{
+      font-size: 20px;
+      padding: 2px; 
+      margin: auto;
+    }
+    .sidenav a{
+      font-size: 20px;
+    }
+    ol{
+      padding-inline-start:6px;
+    }
+  }
+  
